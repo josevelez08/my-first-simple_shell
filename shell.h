@@ -14,12 +14,13 @@
 /**
 *struct shell - structura
 *@path: array of strings
-*@eof: counter
 *@getline: stream
 *@counter: counter
 *@counterpath: counter for path liberation
-*@completecommand: direction and command in a string
+*@command_to_ex: direction and command in a string
 *@token: command and arguments
+*@i: counter
+*@str: string
 */
 typedef struct shell
 {

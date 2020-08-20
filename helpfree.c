@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * helpfree - an altern mallocnt for nos working commands
- * @data: struct with data
+ * @struc: struct with data
  * Return: int for erasing status
  */
 int helpfree(shell_t *struc)
@@ -22,5 +22,5 @@ int helpfree(shell_t *struc)
 	free(struc->path);
 	free(struc->getline);
 	free(struc);
-	exit (1);
+	exit(1);
 }

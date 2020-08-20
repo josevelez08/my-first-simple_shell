@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * div_path - gets the path
- * @data: struct with data
+ * @structure: struct with data
  * Return: teh path
  */
 shell_t *div_path(shell_t *structure)

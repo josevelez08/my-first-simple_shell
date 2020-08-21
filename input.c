@@ -20,8 +20,6 @@ shell_t *input(void)
 		free(input);
 		exit(EXIT_FAILURE);
 	}
-	if (isatty(STDIN_FILENO))
-		prompt();
 	while (1)
 	{
 		charr = _getchar();

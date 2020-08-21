@@ -8,6 +8,9 @@ int main(void)
 	shell_t *structure;
 while (1)
 {
+	signal(SIGINT, signal_handler);
+	if (isatty(STDIN_FILENO))
+	write(STDIN_FILENO, "$ ", 2);
 	if (errno == 1)
 	{
 		exit(1);

@@ -10,7 +10,7 @@ while (1)
 {
 	signal(SIGINT, signal_handler);
 	if (isatty(STDIN_FILENO))
-	write(STDIN_FILENO, "$ ", 2);
+	prompt();
 	if (errno == 1)
 	{
 		exit(1);
